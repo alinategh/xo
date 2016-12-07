@@ -1,7 +1,7 @@
 
 <?php
 
-define('BOT_TOKEN', '..');
+define('BOT_TOKEN', '257757519:AAGHVYZY1wZXE816Jp4wfEvwuhsu815Zvz4');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -121,11 +121,13 @@ function processMessage($message) {
   if (isset($message['text'])) {
     // incoming text message
     $text = $message['text'];
-    $admin = 100096055;
+    $admin = 67516785;
     $matches = explode(' ', $text);
     $substr = substr($text, 0,7 );
     if (strpos($text, "/start") === 0) {
         apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => 'سلام 
+
+من 👦🏻عمو روبوت👦🏻 هستم!
 
 برای ساخت ربات پیام رسان خود  توکن ربات خود را از @botfather دریافت کرده و آن را ارسال کنید. 
 
@@ -133,14 +135,14 @@ function processMessage($message) {
 `123456789:ABCDE1FGHIJ5KLMNO5PQRS`
 
 
-به ربات ما امتیاز بدید  👈        [⭐️TG Massenger⭐️](https://telegram.me/storebot?start=TGXOBot)
-عضو کانال ما شوید  👈        [⭐️EleGanceTM⭐️](https://telegram.me/EleGanceTM)
+روبات اديت نكن ساز! 👈        [⭐️maman robot⭐️](https://telegram.me/dontedbot)
+عضو کانال ما شوید  👈        [⭐️anti spam group⭐️](https://telegram.me/EleGanceTM)
 
 🔹🔶سپس به @botfather دستور "/setinline" را ارسال نمایید و متن "Xo Game :)" را برایش ارسال کنید. 😄
 
 هر نفر = یک ربات ✖️
 
-🤖 @TGMassengerRoBot',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
+🤖',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
 
 $txxt = file_get_contents('pmembers.txt');
@@ -151,7 +153,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 255017796)
+        if($chat_id == 67516785)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -166,8 +168,8 @@ $pmembersid= explode("\n",$txxt);
     }else if ($text == "Version") {
       apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>XO Creator</b>
 <b>ver. 3.0</b>
-<code>Coded By</code> @Kiarash_Gh14
-Channel: @EleGanceTM","parse_mode"=>"html"));
+<code>Coded By</code> @parsaghafoori
+Channel: @anti_spam_group","parse_mode"=>"html"));
 
 
     
@@ -243,8 +245,6 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=https://;-;.rhcloud.com/'.$chat_id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
-به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=TGXOBot
 .";
     
     $bot_url    = "https://api.telegram.org/bot../"; 
