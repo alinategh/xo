@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '**TOKEN**');
+define('BOT_TOKEN', '257757519:AAGHVYZY1wZXE816Jp4wfEvwuhsu815Zvz4');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -149,12 +149,12 @@ function processMessage($message) {
     $text = $message['text'];
 
     if (strpos($text, "/start") === 0) {
-      apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "اگه تو هم تلگرامت آپدیت باشه این دکمه های شیشه ای رو دیدی صددرصد\n ما با همین دکمه ها براتون چند تا بازی آماده کردیم مثل ایکس او و سنگ کاغذ قیچی \n اگه مایلی با دوستات بازی کنی روی لینک زیر کلیک کن. بعد دوستتو انتخاب کن و منتظر باش که بااکس اینلاین ظاهر شه", 'reply_markup' => array(
+      apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => "اگه تو هم تلگرامت آپدیت باشه این دکمه های شیشه ای رو دیدی صددرصد\n اگه مایلی با دوستات بازی کني ايد روبات رو تايپ كن بعد اسم بازي", 'reply_markup' => array(
             "inline_keyboard"=>array(
-			    array(array("text"=>"🎭ربات XO خود را بسازید🎭","url"=>"https://telegram.me/TGXOBot")),
-				array(array("text"=>"📮ربات پیام رسان خود را بسازید🚀","url"=>"https://telegram.me/TGMassengerBot")),
- 				array(array("text"=>"🚨ربات ادیت نکن خود را بسازید🚨","url"=>"https://telegram.me/TGMassengerBot")),
-				array(array("text"=>"کانال","url"=>"https://telegram.me/EleGanceTM")),
+			    array(array("text"=>"🎭ربات XO خود را بسازید🎭","url"=>"https://telegram.me/xogamesmakebot")),
+			    
+ 				array(array("text"=>"🚨ربات ادیت نکن خود را بسازید🚨","url"=>"https://telegram.me/dontedbot")),
+				array(array("text"=>"کانال","url"=>"https://telegram.me/anti_spam_group
 			)
 		)));
     } 
@@ -166,7 +166,7 @@ function inlineMessage($inline){
 	$chat_id=$inline['from']['id'];
 	$query=$inline['query'];
 	
-	//apiRequest("sendMessage",array("chat_id"=>111825543,"text"=>json_encode($inline['from'])));
+	//apiRequest("sendMessage",array("chat_id"=>67516785=>json_encode($inline['from'])));
 	apiRequest("answerInlineQuery",array("inline_query_id"=>$id,"results"=>array(array("type"=>"article","id"=>$query,"title"=>"بازی XO","input_message_content"=>array("message_text"=>"<b>بازی XO</b>\n برای شروع روی دگمه زیر کلیک کنید👇🏻👇🏻👇🏻","parse_mode"=>"HTML","disable_web_page_preview"=>false),
 	    "reply_markup"=>array(
 	        "inline_keyboard"=>array(
